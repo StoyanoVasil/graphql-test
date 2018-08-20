@@ -1,12 +1,10 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-const BookSchema = new Schema({
-    id: Number,
+const bookSchema = new Schema({
     name: String,
-    genre: String
+    genre: String,
+    authorId: String
 });
 
-const BookModel = mongoose.model('book', BookSchema);
-
-module.exports = BookModel;
+module.exports = mongoose.model('book', bookSchema);

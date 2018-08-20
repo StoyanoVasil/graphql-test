@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "mocha --no-deprecation",
+    "start": "nodemon app"
   },
   "dependencies": {
     "express": "^4.16.3",
