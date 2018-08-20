@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const AuthorSchema = new Schema({
-    id: Int,
+    id: Number,
     name: String,
-    age: Int
+    age: Number
 });
 
 const AuthorModel = mongoose.model('author', AuthorSchema);
